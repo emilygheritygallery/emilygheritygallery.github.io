@@ -567,8 +567,8 @@ var main = (function($) { var _ = {
 
 										// Set background image.
 											newSlide.$slideImage
-												.css('background-image', 'url(' + newSlide.url + ')');
-
+ 										   .css('background-image', "url('" + newSlide.url + "')");
+	
 										// Mark as loaded.
 											newSlide.loaded = true;
 											newSlide.$slide.removeClass('loading');
@@ -742,5 +742,6 @@ var main = (function($) { var _ = {
 			_.hide();
 
 	},
+
 
 }; return _; })(jQuery); main.init();
